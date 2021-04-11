@@ -23,7 +23,6 @@ body {
   margin: 0 auto;
 }
 
-
 img {
   min-width: 300px;
   max-width: 100%;
@@ -54,7 +53,6 @@ input {
 }
 
 /* text class*/
-
 
 .text {
   text-align: center;
@@ -287,7 +285,6 @@ input {
   .features__card__container {
     max-height: 650px;
   }
-  
 }
 
 /* about */
@@ -296,11 +293,7 @@ input {
   height: 100vh !important;
   display: grid;
   grid-template-rows: auto 1fr;
-
-
-
 }
-
 
 .about__video {
   padding: 1rem;
@@ -341,15 +334,13 @@ input {
 
 /* Meet Us ("What Clients Say" and "Meet Our Team") */
 
-
-
-  @media (min-width: 1100px) {
-    .meetus {
-        height: 100vh !important;
-        display: grid;
-        grid-template-rows: 20vh auto 20vh auto;
+@media (min-width: 1100px) {
+  .meetus {
+    height: 100vh !important;
+    display: grid;
+    grid-template-rows: 20vh auto 20vh auto;
   }
-/* testimonial */
+  /* testimonial */
   .testimonial__header {
     display: flex;
     justify-content: center;
@@ -362,10 +353,6 @@ input {
     align-items: center;
   }
 }
-
-
-
-
 
 /* testimonial cards */
 
@@ -533,7 +520,6 @@ input {
 .contact__text {
   text-align: start;
   margin: 1.25rem 0;
-
 }
 
 .contact__text__paragraph {
@@ -550,7 +536,6 @@ input {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  
 }
 
 .contact__form__inputs input {
@@ -739,4 +724,3 @@ footer {
 .footer__contact__paragraph {
   font-size: 0.75rem;
 }
-
