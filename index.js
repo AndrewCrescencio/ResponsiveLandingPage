@@ -11,5 +11,6 @@ const dropdownMenu = document.querySelectorAll('.footer__links__dropdown__menu')
 for (let i = 0; i < dropdownButton.length; i++) {
     dropdownButton[i].addEventListener("click", function() {
         dropdownMenu[i].classList.toggle("active");
+        console.log('KRL!');
     });
 }
