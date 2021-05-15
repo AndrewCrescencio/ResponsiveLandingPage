@@ -113,7 +113,7 @@ a {
 
 .navbar {
   margin: 0 auto;
-  padding: 1rem;
+  padding: 2rem 2rem 1.5rem;
 }
 
 .navbar__container {
@@ -130,19 +130,26 @@ a {
 }
 
 .toggle-button {
-  font-size: 2.5rem;
-  color: #737373;
-}
-
-.brand-logo {
   font-size: 1.5rem;
+  color: #ffffff;
 }
 
 .navbar__links {
   display: none;
   flex-direction: column;
   align-items: center;
-  margin-top: 1rem;
+  margin: 4rem 0 2rem;
+}
+.navbar__links li {
+  margin: 1rem 0;
+}
+.navbar__links li a {
+  font-size: 1.875rem;
+  
+}
+
+.active {
+  display: flex !important;
 }
 
 @media (min-width: 800px) {
@@ -155,10 +162,6 @@ a {
   .navbar__links li a {
     display: block;
     margin: 20px;
-  }
-
-  .active {
-    display: flex !important;
   }
 
   header {
@@ -191,6 +194,8 @@ a {
   display: grid;
   place-content: center;
 }
+
+
 
 @media (min-width: 800px) {
   .hero {
