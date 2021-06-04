@@ -83,6 +83,10 @@ a {
   font-weight: 600;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 /* Buttons */
 .button {
   padding: 15px auto;
@@ -402,6 +406,11 @@ a {
   cursor: pointer;
 }
 
+.testimonial__card__person__img img {
+  width: 100%;
+  border-radius: 50%;
+}
+
 .testimonial__card__person__info a {
   color: var(--orange-primary);
   text-decoration: none;
@@ -576,6 +585,12 @@ footer {
   padding: 1rem 2rem;
   background-color: #252b42;
   color: #ffffff;
+}
+
+@media (min-width: 1200px) {
+  footer {
+    padding: 1rem 0;
+  }
 }
 
 /* Footer header */
