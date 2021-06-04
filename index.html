@@ -18,14 +18,14 @@
       <div class="navbar__container">
         <div class="navbar__header">
 
-          <h3 class="brand-logo ">Kmarketer</h3>
+          <span class="brand-logo">Kmarketer</span>
           <a href="#">
-            <i class="fas fa-bars toggle-button"></i>
+            <i id="toggle-button" class="fas fa-bars toggle-button"></i>
           </a>
         </div>
 
       </div>
-      <ul class="navbar__links">
+      <ul class="navbar__links" id="navbarLinks">
         <li><a href="#home">Home</a></li>
         <li><a href="#features">Features</a></li>
         <li><a href="#about">About</a></li>
@@ -67,7 +67,7 @@
         </div>
 
         <!-- Features Card Container -->
-        <div class="features__card__container">
+        <div class="features__card__container wow slideInLeft">
 
           <div class="features__card">
             <div>
@@ -354,9 +354,10 @@
   </section>
 
   <!-- Footer -->
+  <div class="container">
   <footer class="footer">
 
-    <div class="container">
+    
 
       <div class="footer__header">
         <h3>Kmarketer</h3>
@@ -369,13 +370,14 @@
       </div>
 
       <ul class="footer__links">
-        <li>
-          <div class="footer__links__dropdown">
+
+        <li class="footer__links__dropdown">
+          <div class="footer__links__dropdown__header">
             <a class="footer__links__dropdown__title">Company Info</a>
             <i class="fas fa-chevron-down dropdownButton"></i>
           </div>
 
-          <ul class="footer__links__dropdown__menu">
+          <ul class="footer__links__dropdown__links">
             <li><a href="#">About Us</a></li>
             <li><a href="#">Carrier</a></li>
             <li><a href="#">We are hiring</a></li>
@@ -383,12 +385,13 @@
           </ul>
         </li>
 
-        <li>
-          <div class="footer__links__dropdown">
+        <li class="footer__links__dropdown">
+          <div class="footer__links__dropdown__header">
             <a class="footer__links__dropdown__title">Legal</a>
             <i class="fas fa-chevron-down dropdownButton"></i>
           </div>
-          <ul class="footer__links__dropdown__menu">
+
+          <ul class="footer__links__dropdown__links">
             <li><a href="#">About Us</a></li>
             <li><a href="#">Carrier</a></li>
             <li><a href="#">We are hiring</a></li>
@@ -396,15 +399,15 @@
           </ul>
         </li>
 
-        <li>
-          <div class="footer__links__dropdown">
+        <li class="footer__links__dropdown">
+          <div class="footer__links__dropdown__header">
             <a class="footer__links__dropdown__title">
               Features
             </a>
             <i class="fas fa-chevron-down dropdownButton"></i>
           </div>
 
-          <ul class="footer__links__dropdown__menu">
+          <ul class="footer__links__dropdown__links">
             <li><a href="#">Business Marketing</a></li>
             <li><a href="#">User Analytic</a></li>
             <li><a href="#">Live Chat</a></li>
@@ -412,21 +415,22 @@
           </ul>
         </li>
 
-        <li>
-          <div class="footer__links__dropdown">
+        <li class="footer__links__dropdown">
+          <div class="footer__links__dropdown__header">
             <a class="footer__links__dropdown__title">
               Resources
             </a>
             <i class="fas fa-chevron-down dropdownButton"></i>
           </div>
 
-          <ul class="footer__links__dropdown__menu">
+          <ul class="footer__links__dropdown__links">
             <li><a href="#">IOS & Android</a></li>
             <li><a href="#">Watch a Demo</a></li>
             <li><a href="#">Customers</a></li>
             <li><a href="#">API</a></li>
           </ul>
         </li>
+
         <li class="footer__contact">
           <h5 class="footer__contact__title">Get in Touch</h5>
           <form class="footer__contact__form">
@@ -436,7 +440,8 @@
           <p class="footer__contact__paragraph">Lorem impsum dolor amit</p>
         </li>
       </ul>
-    </div>
+    
   </footer>
+</div>
 </body>
 </html>
