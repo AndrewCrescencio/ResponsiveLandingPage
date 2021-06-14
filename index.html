@@ -8,8 +8,9 @@
   <title>Document</title>
   <script src="https://kit.fontawesome.com/881d0e5c76.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <script src="index.js" defer></script>
+  <link rel="stylesheet" href="./css/animate.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/index.js" defer></script>
 </head>
 <body>
   <header>
@@ -41,6 +42,9 @@
 
     <!-- HERO -->
     <section id="home" class="hero">
+      <div class="element-animate">
+
+      
       <div>
         <h1>We Take Care<br>
           of the future.</h1>
@@ -54,10 +58,11 @@
         <button class="hero__button1 button">Get Quote Now</button>
         <button class="hero__button2 button">Learn More</button>
       </div>
+    </div>
     </section>
 
     <!-- WHY CHOOSE US / Features -->
-    <section id="features" class="features">
+    <section id="features" class="features element-animate" data-animate-effect="fadeInLeft">
       <div class="container">
         <div>
           <h2>why choose us </h2>
@@ -136,7 +141,7 @@
     </section>
 
     <!-- Video Section / About -->
-    <figure class="about">
+    <figure class="about element-animate" data-animate-effect="fadeInLeft">
       <div class="container">
         <div>
           <h2>We are providing best<br>business service.</h2>
@@ -159,7 +164,7 @@
     <!-- About -->
 
     <!-- Testimonials -->
-    <section id="about" class="testimonial">
+    <section id="about" class="testimonial element-animate" data-animate-effect="fadeInLeft">
       <div class="container">
 
         <div>
@@ -190,7 +195,7 @@
                 <img src="/images/person4.png" alt="">
               </div>
               <div class="testimonial__card__person__info">
-                <a href="#">Regina Miles</a>
+                <span href="#">Regina Miles</span>
                 <p>Designer</p>
               </div>
             </div>
@@ -216,7 +221,7 @@
                 <img src="/images/person5.png" alt="">
               </div>
               <div class="testimonial__card__person__info">
-                <a href="#">Regina Miles</a>
+                <span href="#">Regina Miles</span>
                 <p>Designer</p>
               </div>
             </div>
@@ -241,7 +246,7 @@
                 <img src="/images/person4.png" alt="">
               </div>
               <div class="testimonial__card__person__info">
-                <a href="#">Regina Miles</a>
+                <span href="#">Regina Miles</span>
                 <p>Designer</p>
               </div>
             </div>
@@ -251,7 +256,7 @@
     </section>
 
     <!-- Team -->
-    <section class="team container">
+    <section class="team container element-animate" data-animate-effect="fadeInLeft">
 
       <div>
         <h2>Meet Our Team</h2>
@@ -318,7 +323,7 @@
   </main>
 
   <!-- Contact -->
-  <section id="contact" class="contact">
+  <section id="contact" class="contact element-animate" data-animate-effect="fadeInLeft">
 
     <div class="contact__container">
 
@@ -343,7 +348,7 @@
   </section>
 
   <!-- contact2 (white background) -->
-  <section class="contact2">
+  <section class="contact2 element-animate" data-animate-effect="fadeInLeft">
     <div class="contact2__content">
       <div>
         <h3>Consulting Agency For Your Business</h3>
@@ -355,7 +360,7 @@
 
   <!-- Footer -->
   <div class="container">
-  <footer class="footer">
+  <footer class="footer element-animate" data-animate-effect="fadeInLeft">
 
     
 
@@ -443,5 +448,8 @@
     
   </footer>
 </div>
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./js/animate.js"></script>
 </body>
 </html>
