@@ -1,3 +1,6 @@
-# Responsive Landing Page (mobile and desktop)
-This is a responsive site, which was made using only HTML5, CSS3 and Javacript.
+# Responsive Landing Page
+This is a responsive site, which was made using htm5, css3, js, jquery and animate.css
+the page was made perfectly like (pixel perfect) a template I got from figma
+[Demo](https://andrewcrescencio.github.io/ResponsiveLandingPage/)
+
 ![Landingpage Thumbnail](./landingpage-thumbnail.png)
