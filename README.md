@@ -1,5 +1,5 @@
 # Responsive Landing Page
-This is a responsive site, which was made using htm5, css3, js, jquery and animate.css
+This is a responsive landing page, which was made using htm5, css3, js, jquery and animate.css
 
 the page was made perfectly like a design file, which I found on figma. (pixel perfect)
 
