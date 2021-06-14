@@ -9,12 +9,14 @@
 }
 :root {
   --orange-primary: #ffa62b;
+  --orange-secundary: #7413f3;
+  --bg-primary: #252b42;
 }
 
 body {
   width: 100%;
   color: #ffffff;
-  background-color: #252b42;
+  background-color: var(--bg-primary);
 }
 
 .container {
@@ -89,11 +91,11 @@ a:hover {
 
 /* Buttons */
 .button {
-  padding: 15px auto;
+  padding: 15px;
   color: #ffffff;
   font-weight: bold;
   background-color: var(--orange-primary);
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   cursor: pointer;
 }
 
@@ -220,15 +222,11 @@ a:hover {
   height: 50px;
   border-radius: 2.5rem;
   border: none;
-  color: white;
   font-size: 0.875rem;
-  font-weight: bold;
-  cursor: pointer;
 }
 
-.hero__button__1:hover {
+.hero__button1:hover {
   background-color: var(--orange-secundary);
-  transition: ease 0.2s;
 }
 
 .hero__button2 {
@@ -244,7 +242,7 @@ a:hover {
   cursor: pointer;
 }
 
-.hero__button__2:hover {
+.hero__button2:hover {
   border: 1px solid var(--orange-primary);
   color: var(--orange-primary);
   transition: 0.6s;
