@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font: inherit 100%;
+  color: inherit;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: $dark-background-color;
+  color: $light-background-color;
+  scroll-padding-top: 81px;
+  line-height: 1;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 1050px;
+  width: 100%;
+  margin: 0 auto;
+}

@@ -1,0 +1,41 @@
+.about {
+  background: linear-gradient(180deg, #252b42 50%, #0b353d 50%);
+  padding: 98px 42px 60px;
+  text-align: center;
+
+  &__video {
+    margin-top: 50px;
+
+    &__image {
+      max-width: 877px;
+      height: 442px;
+      margin: auto;
+      background: url("../images/video.webp");
+      background-position: center;
+      background-repeat: no-repeat;
+      display: grid;
+      place-content: center;
+    }
+
+    &__btn {
+      width: 98px;
+      height: 98px;
+      border-radius: 50%;
+      background-color: #03badf;
+      display: grid;
+      place-content: center;
+      cursor: pointer;
+      &:hover {
+        background-color: #0ac7ec;
+      }
+      &__play {
+        width: 0;
+        height: 0;
+        border-top: 14.5px solid transparent;
+        border-bottom: 14.5px solid transparent;
+        border-left: 25px solid white;
+        cursor: pointer;
+      }
+    }
+  }
+}

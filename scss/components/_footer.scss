@@ -1,0 +1,158 @@
+.footer {
+  width: 100%;
+  padding: 53px 2rem 0;
+  background-color: #252b42;
+  color: #ffffff;
+
+  @include mq("desktop", "min") {
+    padding: 53px 0 0;
+  }
+
+  &__header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 63px;
+
+    @include mq("tablet", "min") {
+      border-bottom: 1px solid #2d3554;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0;
+      padding-bottom: 53px;
+    }
+
+    &__icons {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+  }
+
+  &__links {
+    width: 100%;
+    text-align: start;
+    margin: 4.375rem 0;
+
+    @include mq("desktop", "min") {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__dropdown {
+      width: 100%;
+      margin: 30px 0;
+
+      @include mq("desktop", "min") {
+        margin: 0;
+      }
+
+      &__header {
+        width: 100%;
+        margin: 20px 0;
+        display: flex;
+        justify-content: space-between;
+
+        img {
+          width: 25px;
+          height: 25px;
+        }
+        @include mq("desktop", "min") {
+          margin: 0;
+          .dropdownButton {
+            display: none;
+          }
+        }
+      }
+
+      &__title {
+        font-weight: bold;
+      }
+
+      &__links {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+
+        @include mq("desktop", "min") {
+          display: flex;
+        }
+
+        li {
+          &:first-of-type {
+            margin-top: 20px;
+          }
+          margin-top: 10px;
+        }
+
+        &.active {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &__contact {
+    width: 100%;
+    max-width: 320px;
+
+    @include mq("desktop", "min") {
+      width: 320px;
+    }
+    &__form {
+      display: flex;
+      width: 100%;
+      border: none;
+      margin: 0.5rem 0;
+
+      input {
+        width: 100%;
+        max-width: 200px;
+        border: 1px solid #e6e6e6;
+        border-right: none;
+        border-radius: 5px 0 0 5px;
+        padding: 15px 20px;
+
+        @include mq("desktop", "min") {
+          width: 200px;
+        }
+      }
+
+      button {
+        width: 117px;
+        border: 1px solid #e6e6e6;
+        border-left: none;
+        border-radius: 0 5px 5px 0;
+        background-color: $primary-color;
+        color: white;
+        padding: 15px 20px;
+      }
+    }
+  }
+
+  &__figmaland {
+    width: 100%;
+    padding: 25px 70px;
+
+    background-color: $secondary-color-2;
+    @include mq("phone", "min") {
+      padding: 25px 96px;
+    }
+    @include mq("desktop", "min") {
+      padding: 25px 32px;
+    }
+    p {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 24px;
+      text-align: center;
+      letter-spacing: 0.2px;
+      color: $light-text-color;
+      @include mq("desktop", "min") {
+        text-align: left;
+      }
+    }
+  }
+}

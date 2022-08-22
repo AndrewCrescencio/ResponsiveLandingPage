@@ -1,460 +1,709 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <script src="https://kit.fontawesome.com/881d0e5c76.js" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/animate.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <script src="./js/index.js" defer></script>
-</head>
+    <meta name="og:title" content="Landify | Landing Page" />
+    <meta
+      name="og:description"
+      content="Landify Landing Page, página feita usando html/sass/js/bootstrap"
+    />
+    <meta
+      name="description"
+      content="Landing page made with HTML5 | JavaScript | Sass | Bootstrap, following figma design. Author: Andrew Crescencio"
+    />
+    <title>Responsive Landing Page</title>
+    <meta />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-  <header>
-    <nav class="navbar">
-
-      <div class="navbar__container">
-        <div class="navbar__header">
-
-          <span class="brand-logo">Kmarketer</span>
-          <a href="#">
-            <i id="toggle-button" class="fas fa-bars toggle-button"></i>
-          </a>
-        </div>
-
+  <body>
+    <header class="header">
+      <div class="header__topBar">
+        <p class="brand-logo">Kmarketer</p>
+        <button id="hamburguerBtn">
+          <img
+            width="24px"
+            height="14px"
+            src="/images/header/hamburger-icon.svg"
+            alt="hamburger button icon"
+            loading="lazy"
+          />
+        </button>
       </div>
-      <ul class="navbar__links" id="navbarLinks">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#meetus">Meet Us</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <nav id="navbar" class="header__navbar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#meetus">Meet Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    </nav>
-
-  </header>
-
-  <main>
-
-    <!-- HERO -->
-    <section id="home" class="hero">
-      <div class="element-animate">
-
-
-        <div>
-          <h1>We Take Care<br>
-            of the future.</h1>
-          <h4>We know how large objects act,but things on a <br> small scale
-            just do
-            not
-            act that
-            way.</h4>
-        </div>
-        <div class="hero__buttons">
-          <button class="hero__button1 button">Get Quote Now</button>
-          <button class="hero__button2 button">Learn More</button>
-        </div>
-      </div>
-    </section>
-
-    <!-- WHY CHOOSE US / Features -->
-    <section id="features" class="features element-animate" data-animate-effect="fadeInLeft">
-      <div class="container">
-        <div>
-          <h2>why choose us </h2>
-          <p>Problems trying to resolve the conflict between
-            <br>the two major realms of Classical physics: Newtonian mechanics
-          </p>
-        </div>
-
-        <!-- Features Card Container -->
-        <div class="features__card__container wow slideInLeft">
-
-          <div class="features__card">
-            <div>
-              <i class="features__card__icon"><i class="fas fa-briefcase"></i></i>
-              <h5 class="features__card__title">Digital Marketing</h5>
-            </div>
-            <p class="features__card__paragraph">the quick fox jumps over the lazy
-              dog the quick fox jumps over the
-              lazy dog </p>
-          </div>
-
-          <div class="features__card">
-
-            <div>
-              <i class="features__card__icon"><i class="fas fa-chart-line"></i></i>
-              <h5 class="features__card__title">Digital Marketing</h5>
-            </div>
-
-            <p class="features__card__paragraph">the quick fox jumps over the lazy
-              dog the quick fox jumps over the
-              lazy dog </p>
-          </div>
-
-          <div class="features__card">
-            <div>
-              <i class="features__card__icon"><i class="fas fa-medal"></i></i>
-              <h5 class="features__card__title">National top 50 firms</h5>
-            </div>
-            <p class="features__card__paragraph">the quick fox jumps over the lazy
-              dog the quick fox jumps over the
-              lazy dog </p>
-          </div>
-
-          <div class="features__card">
-            <div>
-              <i class="features__card__icon"><i class="fas fa-medal"></i></i>
-              <h5 class="features__card__title">National top 50 firms</h5>
-            </div>
-            <p class="features__card__paragraph">the quick fox jumps over the lazy
-              dog the quick fox jumps over the
-              lazy dog </p>
-          </div>
-
-          <div class="features__card">
-            <div>
-              <i class="features__card__icon"><i class="fas fa-medal"></i></i>
-              <h5 class="features__card__title">National top 50 firms</h5>
-            </div>
-            <p class="features__card__paragraph">the quick fox jumps over the lazy
-              dog the quick fox jumps over the
-              lazy dog </p>
-          </div>
-
-          <div class="features__card">
-            <div>
-              <i class="features__card__icon"><i class="fas fa-medal"></i></i>
-              <h5 class="features__card__title">National top 50 firms</h5>
-            </div>
-            <p class="features__card__paragraph">the quick fox jumps over the lazy
-              dog the quick fox jumps over the
-              lazy dog </p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Video Section / About -->
-    <figure class="about element-animate" data-animate-effect="fadeInLeft">
-      <div class="container">
-        <div>
-          <h2>We are providing best<br>business service.</h2>
-          <p>Problems trying to resolve the conflict between<br>the two major
-            realms of
-            Classical physics: Newtonian mechanics</p>
-        </div>
-
-        <div class="about__video">
-          <div class="about__video__image">
-            <div class="about__video__btn">
-              <div class="about__video__btn__play"></div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </figure>
-
-    <!-- About -->
-
-    <!-- Testimonials -->
-    <section id="about" class="testimonial element-animate" data-animate-effect="fadeInLeft">
-      <div class="container">
-
-        <div>
-          <h2>What Clients Say</h2>
-          <p>Problems trying to resolve the conflict between<br>
-            the two major realms of Classical physics: Newtonian mechanics</p>
-        </div>
-
-        <!-- Testimonials Cards Container -->
-        <div class="testimonial__card__container">
-          <div class="testimonial__card">
-            <div class="testimonial__card__icon">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-            </div>
-
-            <div>
-              <h6 class="testimonial__card__text">Slate helps you see how many
-                more days you need to work to
-                reach your financial goal.</h6>
-            </div>
-
-            <div class="testimonial__card__person">
-              <div class="testimonial__card__person__img">
-                <img src="./images/person4.png" alt="">
-              </div>
-              <div class="testimonial__card__person__info">
-                <span href="#">Regina Miles</span>
-                <p>Designer</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial__card">
-            <div class="testimonial__card__icon">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-            </div>
-
-            <div>
-              <h6 class="testimonial__card__text">Slate helps you see how many
-                more days you need to work to
-                reach your financial goal.</h6>
-            </div>
-
-            <div class="testimonial__card__person">
-              <div class="testimonial__card__person__img">
-                <img src="./images/person5.png" alt="">
-              </div>
-              <div class="testimonial__card__person__info">
-                <span href="#">Regina Miles</span>
-                <p>Designer</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial__card">
-            <div class="testimonial__card__icon">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-            </div>
-            <div>
-              <h6 class="testimonial__card__text">Slate helps you see how many
-                more days you need to work to
-                reach your financial goal.</h6>
-            </div>
-
-            <div class="testimonial__card__person">
-              <div class="testimonial__card__person__img">
-                <img src="./images/person4.png" alt="">
-              </div>
-              <div class="testimonial__card__person__info">
-                <span href="#">Regina Miles</span>
-                <p>Designer</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Team -->
-    <section class="team container element-animate" data-animate-effect="fadeInLeft">
-
-      <div>
-        <h2>Meet Our Team</h2>
-        <p>Problems trying to resolve the conflict between
-          <br>the two major realms of Classical physics: Newtonian mechanics
+    <main>
+      <!-- HERO -->
+      <section id="home" class="hero">
+        <h1>
+          We Take Care
+          <br />
+          of the future.
+        </h1>
+        <p>
+          We know how large objects act,but things on a
+          <br />
+          small scale just do not act that way.
         </p>
-      </div>
 
-      <div class="team__card__container">
+        <div class="hero__buttons">
+          <button>Get Quote Now</button>
+          <button>Learn More</button>
+        </div>
+      </section>
 
-        <div class="team__card">
-          <div class="team__card__img">
-            <img src="./images/person1.png" alt="Person from team image">
-          </div>
-          <div class="team__card__content">
+      <!-- WHY CHOOSE US / Features -->
+      <section id="features" class="features">
+        <div class="container">
+          <h2>why choose us</h2>
+          <p>
+            Problems trying to resolve the conflict between
+            <br />
+            the two major realms of Classical physics: Newtonian mechanics
+          </p>
 
-            <h5>Ashley Fletcher</h5>
-            <h6>CEO</h6>
+          <!-- Features Card Container -->
+          <div class="features__cards">
+            <div class="features__card">
+              <div>
+                <!-- <i class="fas fa-briefcase"></i> -->
+                <img
+                  src="/images/features/icon1.svg"
+                  alt="icon"
+                  width="48"
+                  height="48"
+                  loading="lazy"
+                />
+                <p class="features__card__title">Digital Marketing</p>
+              </div>
+              <p class="features__card__paragraph">
+                the quick fox jumps over the lazy dog the quick fox jumps over
+                the lazy dog
+              </p>
+            </div>
 
-            <div class="team__card__content__icons">
-              <i class="fab fa-facebook-square"></i>
-              <i class="fab fa-instagram"></i>
-              <i class="fab fa-twitter"></i>
+            <div class="features__card">
+              <div>
+                <img
+                  src="/images/features/icon2.svg"
+                  alt="icon"
+                  width="48"
+                  height="48"
+                  loading="lazy"
+                />
+                <p class="features__card__title">Digital Marketing</p>
+              </div>
+
+              <p class="features__card__paragraph">
+                the quick fox jumps over the lazy dog the quick fox jumps over
+                the lazy dog
+              </p>
+            </div>
+
+            <div class="features__card">
+              <div>
+                <img
+                  src="/images/features/icon3.svg"
+                  alt="icon"
+                  width="48"
+                  height="48"
+                  loading="lazy"
+                />
+                <p class="features__card__title">National top 50 firms</p>
+              </div>
+              <p class="features__card__paragraph">
+                the quick fox jumps over the lazy dog the quick fox jumps over
+                the lazy dog
+              </p>
+            </div>
+
+            <div class="features__card">
+              <div>
+                <img
+                  src="/images/features/icon4.svg"
+                  alt="icon"
+                  width="48"
+                  height="48"
+                  loading="lazy"
+                />
+                <p class="features__card__title">National top 50 firms</p>
+              </div>
+              <p class="features__card__paragraph">
+                the quick fox jumps over the lazy dog the quick fox jumps over
+                the lazy dog
+              </p>
+            </div>
+
+            <div class="features__card">
+              <div>
+                <img
+                  src="/images/features/icon5.svg"
+                  alt="icon"
+                  width="48"
+                  height="48"
+                  loading="lazy"
+                />
+                <p class="features__card__title">National top 50 firms</p>
+              </div>
+              <p class="features__card__paragraph">
+                the quick fox jumps over the lazy dog the quick fox jumps over
+                the lazy dog
+              </p>
+            </div>
+
+            <div class="features__card">
+              <div>
+                <img
+                  src="/images/features/icon6.svg"
+                  alt="icon"
+                  width="48"
+                  height="48"
+                  loading="lazy"
+                />
+                <p class="features__card__title">National top 50 firms</p>
+              </div>
+              <p class="features__card__paragraph">
+                the quick fox jumps over the lazy dog the quick fox jumps over
+                the lazy dog
+              </p>
             </div>
           </div>
         </div>
-        <div class="team__card">
-          <div class="team__card__img">
-            <img src="./images/person2.png" alt="Person from team image">
+      </section>
+
+      <!-- Video Section / About -->
+      <figure class="about">
+        <div class="container">
+          <div>
+            <h2>
+              We are providing best
+              <br />
+              business service.
+            </h2>
+            <p>
+              Problems trying to resolve the conflict between
+              <br />
+              the two major realms of Classical physics: Newtonian mechanics
+            </p>
           </div>
-          <div class="team__card__content">
 
-            <h5>Ashley Fletcher</h5>
-            <h6>CEO</h6>
-
-            <div class="team__card__content__icons">
-              <i class="fab fa-facebook-square"></i>
-              <i class="fab fa-instagram"></i>
-              <i class="fab fa-twitter"></i>
+          <div class="about__video">
+            <div class="about__video__image">
+              <div class="about__video__btn">
+                <div class="about__video__btn__play"></div>
+              </div>
             </div>
           </div>
         </div>
+      </figure>
 
-        <div class="team__card">
-          <div class="team__card__img">
-            <img src="./images/person3.png" alt="Person from team image">
-          </div>
-          <div class="team__card__content">
+      <!-- Testimonials -->
+      <section id="about" class="testimonial">
+        <div class="container">
+          <h2>What Clients Say</h2>
+          <p>
+            Problems trying to resolve the conflict between
+            <br />
+            the two major realms of Classical physics: Newtonian mechanics
+          </p>
 
-            <h5>Ashley Fletcher</h5>
-            <h6>CEO</h6>
+          <!-- Testimonials Cards Container -->
+          <div class="testimonial__cards">
+            <div class="testimonial__card">
+              <div class="testimonial__card__icon">
+                <img
+                  src="/images/testimonials/start-icon.svg"
+                  alt="&#x2B50;"
+                  width="22"
+                  height="22"
+                />
+                <img
+                  src="/images/testimonials/start-icon.svg"
+                  alt="&#x2B50;"
+                  width="22"
+                  height="22"
+                />
+                <img
+                  src="/images/testimonials/start-icon.svg"
+                  alt="&#x2B50;"
+                  width="22"
+                  height="22"
+                />
+                <img
+                  src="/images/testimonials/start-icon.svg"
+                  alt="&#x2B50;"
+                  width="22"
+                  height="22"
+                />
+                <img
+                  src="/images/testimonials/unmarked-start-icon.svg"
+                  alt="empty start"
+                  width="22"
+                  height="22"
+                />
+              </div>
 
-            <div class="team__card__content__icons">
-              <i class="fab fa-facebook-square"></i>
-              <i class="fab fa-instagram"></i>
-              <i class="fab fa-twitter"></i>
+              <p class="testimonial__card__text">
+                Slate helps you see how many more days you need to work to reach
+                your financial goal.
+              </p>
+
+              <div class="testimonial__card__avatar">
+                <img
+                  class="testimonial__card__avatar__img"
+                  src="/images/person3.webp"
+                  alt="avatar image"
+                  loading="lazy"
+                />
+                <div class="testimonial__card__avatar__info">
+                  <p>Regina Miles</p>
+                  <p>Designer</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial__card">
+              <div class="testimonial__card__icon">
+                <img
+                  src="/images/testimonials/start-icon.svg"
+                  alt="&#x2B50;"
+                  width="22"
+                  height="22"
+                />
+                <img
+                  src="/images/testimonials/start-icon.svg"
+                  alt="&#x2B50;"
+                  width="22"
+                  height="22"
+                />
+                <img
+                  src="/images/testimonials/start-icon.svg"
+                  alt="&#x2B50;"
+                  width="22"
+                  height="22"
+                />
+                <img
+                  src="/images/testimonials/start-icon.svg"
+                  alt="&#x2B50;"
+                  width="22"
+                  height="22"
+                />
+                <img
+                  src="/images/testimonials/unmarked-start-icon.svg"
+                  alt="empty start"
+                  width="22"
+                  height="22"
+                />
+              </div>
+
+              <p class="testimonial__card__text">
+                Slate helps you see how many more days you need to work to reach
+                your financial goal.
+              </p>
+
+              <div class="testimonial__card__avatar">
+                <img
+                  class="testimonial__card__avatar__img"
+                  src="/images/person4.webp"
+                  alt="avatar image"
+                  loading="lazy"
+                />
+                <div class="testimonial__card__avatar__info">
+                  <p>Regina Miles</p>
+                  <p>Designer</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial__card">
+              <div class="testimonial__card__icon">
+                <img
+                  src="/images/testimonials/start-icon.svg"
+                  alt="&#x2B50;"
+                  width="22"
+                  height="22"
+                />
+                <img
+                  src="/images/testimonials/start-icon.svg"
+                  alt="&#x2B50;"
+                  width="22"
+                  height="22"
+                />
+                <img
+                  src="/images/testimonials/start-icon.svg"
+                  alt="&#x2B50;"
+                  width="22"
+                  height="22"
+                />
+                <img
+                  src="/images/testimonials/start-icon.svg"
+                  alt="&#x2B50;"
+                  width="22"
+                  height="22"
+                />
+                <img
+                  src="/images/testimonials/unmarked-start-icon.svg"
+                  alt="empty start"
+                  width="22"
+                  height="22"
+                />
+              </div>
+
+              <p class="testimonial__card__text">
+                Slate helps you see how many more days you need to work to reach
+                your financial goal.
+              </p>
+
+              <div class="testimonial__card__avatar">
+                <img
+                  class="testimonial__card__avatar__img"
+                  src="/images/person4.webp"
+                  alt="avatar image"
+                  loading="lazy"
+                />
+                <div class="testimonial__card__avatar__info">
+                  <p>Regina Miles</p>
+                  <p>Designer</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+      </section>
 
-      </div>
-    </section>
+      <!-- Team -->
+      <section id="meetus" class="team container">
+        <h2>Meet Our Team</h2>
+        <p>
+          Problems trying to resolve the conflict between
+          <br />
+          the two major realms of Classical physics: Newtonian mechanics
+        </p>
 
-  </main>
+        <div class="team__cards">
+          <div class="team__card">
+            <div class="team__card__img">
+              <img
+                src="/images/person1.webp"
+                alt="Person from team image"
+                loading="lazy"
+              />
+            </div>
+            <div class="team__card__body">
+              <p>Ashley Fletcher</p>
+              <p>CEO</p>
 
-  <!-- Contact -->
-  <section id="contact" class="contact element-animate" data-animate-effect="fadeInLeft">
+              <div class="team__card__body__social">
+                <img
+                  src="/images/meetus/facebook-icon.svg"
+                  alt="facebook icon"
+                  width="24"
+                  height="24"
+                  loading="lazy"
+                />
+                <img
+                  src="/images/meetus/instagram-icon.svg"
+                  alt="facebook icon"
+                  width="24"
+                  height="24"
+                  loading="lazy"
+                />
+                <img
+                  src="/images/meetus/twitter-icon.svg"
+                  alt="facebook icon"
+                  width="24"
+                  height="20"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="team__card">
+            <div class="team__card__img">
+              <img
+                src="/images/person2.webp"
+                alt="Person from team image"
+                loading="lazy"
+              />
+            </div>
+            <div class="team__card__body">
+              <p>Ashley Fletcher</p>
+              <p>CEO</p>
 
-    <div class="contact__container">
+              <div class="team__card__body__social">
+                <img
+                  src="/images/meetus/facebook-icon.svg"
+                  alt="facebook icon"
+                  width="24"
+                  height="24"
+                  loading="lazy"
+                />
+                <img
+                  src="/images/meetus/instagram-icon.svg"
+                  alt="facebook icon"
+                  width="24"
+                  height="24"
+                  loading="lazy"
+                />
+                <img
+                  src="/images/meetus/twitter-icon.svg"
+                  alt="facebook icon"
+                  width="24"
+                  height="20"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
 
-      <div>
-        <h5>Constact Us</h5>
-        <h2>Make an appointment</h2>
-      </div>
+          <div class="team__card">
+            <div class="team__card__img">
+              <img
+                src="/images/person3.webp"
+                alt="Person from team image"
+                loading="lazy"
+              />
+            </div>
+            <div class="team__card__body">
+              <p>Ashley Fletcher</p>
+              <p>CEO</p>
 
+              <div class="team__card__body__social">
+                <img
+                  src="/images/meetus/facebook-icon.svg"
+                  alt="facebook icon"
+                  width="24"
+                  height="24"
+                  loading="lazy"
+                />
+                <img
+                  src="/images/meetus/instagram-icon.svg"
+                  alt="facebook icon"
+                  width="24"
+                  height="24"
+                  loading="lazy"
+                />
+                <img
+                  src="/images/meetus/twitter-icon.svg"
+                  alt="facebook icon"
+                  width="24"
+                  height="20"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
       <form class="contact__form">
-        <div class="contact__form__inputs">
-          <input type="text" placeholder="Full Name">
-          <input type="email" name="" id="" placeholder="email@email.com">
-          <input type="text" placeholder="State">
-          <input type="text" placeholder="City">
-          <textarea name="" id="" cols="10" rows="3" placeholder="Your message"></textarea>
+        <div class="container">
+          <h4>Constact Us</h4>
+          <p>Make an appointment</p>
+
+          <div class="contact__form__inputs">
+            <input type="text" placeholder="Full Name" />
+            <input type="email" placeholder="example@gmail.com" />
+            <select name="state">
+              <option value="">Please Select</option>
+            </select>
+            <select name="state">
+              <option value="">4:00 Available</option>
+            </select>
+            <textarea
+              name=""
+              cols="10"
+              rows="3"
+              placeholder="Message"
+            ></textarea>
+          </div>
+          <button class="contact__form__submit">Book Appointment</button>
         </div>
       </form>
 
-      <button class="contact__form__button button">Book Appointment</button>
-
-    </div>
-  </section>
-
-  <!-- contact2 (white background) -->
-  <section class="contact2 element-animate" data-animate-effect="fadeInLeft">
-    <div class="contact2__content">
-      <div>
-        <h3>Consulting Agency For Your Business</h3>
-        <p>the quick fox jumps over the lazy dog</p>
-      </div>
-      <button class="contact2__button button">Contact Us</button>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <div class="container">
-    <footer class="footer element-animate" data-animate-effect="fadeInLeft">
-
-
-
-      <div class="footer__header">
-        <h3>Kmarketer</h3>
-        <div class="footer__header__icons">
-          <i class="fab fa-facebook-square"></i>
-          <i class="fab fa-instagram"></i>
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-youtube"></i>
+      <div class="contact__footer">
+        <div class="container">
+          <div>
+            <p>Consulting Agency For Your Business</p>
+            <p>the quick fox jumps over the lazy dog</p>
+          </div>
+          <button class="contact__footer__button">Contact Us</button>
         </div>
       </div>
+    </section>
 
-      <ul class="footer__links">
+    <!-- contact footer -->
 
-        <li class="footer__links__dropdown">
-          <div class="footer__links__dropdown__header">
-            <a class="footer__links__dropdown__title">Company Info</a>
-            <i class="fas fa-chevron-down dropdownButton"></i>
+    <!-- Footer -->
+    <div class="container">
+      <footer class="footer">
+        <div class="footer__header">
+          <h3>Kmarketer</h3>
+          <div class="footer__header__icons">
+            <img
+              src="/images/footer/facebook-icon.svg"
+              alt="facebook icon"
+              width="24"
+              height="24"
+            />
+            <img
+              src="/images/footer/instagram-icon.svg"
+              alt="instagram icon"
+              width="24"
+              height="24"
+            />
+            <img
+              src="/images/footer/twitter-icon.svg"
+              alt="twitter icon"
+              width="24"
+              height="20"
+            />
+            <img
+              src="/images/footer/youtube-icon.svg"
+              alt="youtube icon"
+              width="24"
+              height="18"
+            />
           </div>
+        </div>
 
-          <ul class="footer__links__dropdown__links">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Carrier</a></li>
-            <li><a href="#">We are hiring</a></li>
-            <li><a href="#">Blog</a></li>
-          </ul>
-        </li>
+        <ul class="footer__links">
+          <li class="footer__links__dropdown">
+            <div class="footer__links__dropdown__header">
+              <a class="footer__links__dropdown__title">Company Info</a>
+              <img
+                class="dropdownButton"
+                src="/images/footer/chevron.svg"
+                alt="chevron down"
+                width="25"
+                height="25"
+              />
+            </div>
 
-        <li class="footer__links__dropdown">
-          <div class="footer__links__dropdown__header">
-            <a class="footer__links__dropdown__title">Legal</a>
-            <i class="fas fa-chevron-down dropdownButton"></i>
-          </div>
+            <ul class="footer__links__dropdown__links">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Carrier</a></li>
+              <li><a href="#">We are hiring</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </li>
 
-          <ul class="footer__links__dropdown__links">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Carrier</a></li>
-            <li><a href="#">We are hiring</a></li>
-            <li><a href="#">Blog</a></li>
-          </ul>
-        </li>
+          <li class="footer__links__dropdown">
+            <div class="footer__links__dropdown__header">
+              <a class="footer__links__dropdown__title">Legal</a>
+              <img
+                class="dropdownButton"
+                src="/images/footer/chevron.svg"
+                alt="chevron down"
+                width="25"
+                height="25"
+              />
+            </div>
 
-        <li class="footer__links__dropdown">
-          <div class="footer__links__dropdown__header">
-            <a class="footer__links__dropdown__title">
-              Features
-            </a>
-            <i class="fas fa-chevron-down dropdownButton"></i>
-          </div>
+            <ul class="footer__links__dropdown__links">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Carrier</a></li>
+              <li><a href="#">We are hiring</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </li>
 
-          <ul class="footer__links__dropdown__links">
-            <li><a href="#">Business Marketing</a></li>
-            <li><a href="#">User Analytic</a></li>
-            <li><a href="#">Live Chat</a></li>
-            <li><a href="#">Unlimited Support</a></li>
-          </ul>
-        </li>
+          <li class="footer__links__dropdown">
+            <div class="footer__links__dropdown__header">
+              <a class="footer__links__dropdown__title">Features</a>
+              <img
+                class="dropdownButton"
+                src="/images/footer/chevron.svg"
+                alt="chevron down"
+                width="25"
+                height="25"
+              />
+            </div>
 
-        <li class="footer__links__dropdown">
-          <div class="footer__links__dropdown__header">
-            <a class="footer__links__dropdown__title">
-              Resources
-            </a>
-            <i class="fas fa-chevron-down dropdownButton"></i>
-          </div>
+            <ul class="footer__links__dropdown__links">
+              <li><a href="#">Business Marketing</a></li>
+              <li><a href="#">User Analytic</a></li>
+              <li><a href="#">Live Chat</a></li>
+              <li><a href="#">Unlimited Support</a></li>
+            </ul>
+          </li>
 
-          <ul class="footer__links__dropdown__links">
-            <li><a href="#">IOS & Android</a></li>
-            <li><a href="#">Watch a Demo</a></li>
-            <li><a href="#">Customers</a></li>
-            <li><a href="#">API</a></li>
-          </ul>
-        </li>
+          <li class="footer__links__dropdown">
+            <div class="footer__links__dropdown__header">
+              <a class="footer__links__dropdown__title">Resources</a>
+              <img
+                class="dropdownButton"
+                src="/images/footer/chevron.svg"
+                alt="chevron down"
+                width="25"
+                height="25"
+              />
+            </div>
 
-        <li class="footer__contact">
-          <h5 class="footer__contact__title">Get in Touch</h5>
-          <form class="footer__contact__form">
-            <input type="email" name="" id="" placeholder="Your Email">
-            <button class="btn">Subscribe</button>
-          </form>
-          <p class="footer__contact__paragraph">Lorem impsum dolor amit</p>
-        </li>
-      </ul>
+            <ul class="footer__links__dropdown__links">
+              <li><a href="#">IOS & Android</a></li>
+              <li><a href="#">Watch a Demo</a></li>
+              <li><a href="#">Customers</a></li>
+              <li><a href="#">API</a></li>
+            </ul>
+          </li>
 
-    </footer>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
-    integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="./js/animate.js"></script>
-</body>
+          <li class="footer__contact">
+            <h4 class="footer__contact__title">Get in Touch</h4>
+            <form class="footer__contact__form">
+              <input type="email" name="" id="" placeholder="Your Email" />
+              <button class="btn">Subscribe</button>
+            </form>
+            <p class="footer__contact__paragraph">Lorem impsum dolor amit</p>
+          </li>
+        </ul>
+      </footer>
+    </div>
 
+    <div class="footer__figmaland">
+      <div class="container">
+        <p>Made With Love By Figmaland All Right Reserved</p>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+      integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- <script src="./js/animate.js"></script> -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+      integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script defer type="module" src="./js/app.js"></script>
+  </body>
 </html>

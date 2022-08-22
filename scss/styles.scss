@@ -1,0 +1,15 @@
+@import "abstracts/animations";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/reset";
+@import "base/typography";
+
+@import "components/navbar";
+@import "components/hero";
+@import "components/section-features";
+@import "components/section-about";
+@import "components/section-testimonials";
+@import "components/section-meetus";
+@import "components/section-contact";
+@import "components/footer";
